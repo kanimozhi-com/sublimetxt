@@ -7,6 +7,6 @@ on:
 jobs:
   run-on-self-hosted:
     runs-on: self-hosted  # or use: [self-hosted, linux] if needed
-    steps:
+    steps: 
       - name: Print Hello
         run: echo "Hello from self-hosted runner!"
