@@ -1,8 +1,9 @@
 name: Test Self-Hosted Runner
 
 on:
-  workflow_dispatch:
-
+  push:
+    branches: main
+    
 jobs:
   run-on-self-hosted:
     runs-on: self-hosted  # or use: [self-hosted, linux] or any custom label
