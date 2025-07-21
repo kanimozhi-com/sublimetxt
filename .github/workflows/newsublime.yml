@@ -2,11 +2,11 @@ name: Test Self-Hosted Runner
 
 on:
   push:
-    branches: main
-    
+    branches: [main]
+
 jobs:
   run-on-self-hosted:
-    runs-on: self-hosted  # or use: [self-hosted, linux] or any custom label
+    runs-on: self-hosted  # or use: [self-hosted, linux] if needed
     steps:
       - name: Print Hello
         run: echo "Hello from self-hosted runner!"
